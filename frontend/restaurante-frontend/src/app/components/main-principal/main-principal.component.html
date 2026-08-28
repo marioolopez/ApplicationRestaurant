@@ -1,0 +1,109 @@
+<!-- Contenedor que ocupa todo el espacio central gracias al flex-grow del padre -->
+<div
+  class="flex-grow flex items-center justify-center p-6 w-full max-w-5xl mx-auto"
+>
+  <div class="w-full py-8 md:py-12">
+    <!-- Eslogan / Mensaje de Bienvenida -->
+    <div class="text-center mb-12">
+      <span
+        class="bg-orange-100 text-orange-600 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider shadow-sm"
+      >
+        ✨ ¡Ya estamos cocinando!
+      </span>
+      <h1
+        class="text-4xl md:text-5xl font-black text-slate-800 mt-4 tracking-tight"
+      >
+        Bienvenido a
+        <span
+          class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-500"
+          >RUTERJS</span
+        >
+      </h1>
+      <p
+        class="text-slate-500 mt-3 text-base md:text-lg max-w-md mx-auto font-medium"
+      >
+        Tu mesa está lista o tu repartidor esperando. ¿Cómo prefieres disfrutar
+        hoy?
+      </p>
+    </div>
+
+    <!-- Las Dos Grandes Opciones con Imágenes -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+      <!-- Opción A: Comer en el Restaurante -->
+      <div
+        class="bg-white rounded-[2.5rem] border border-slate-100 shadow-xl shadow-slate-100/70 flex flex-col justify-between group overflow-hidden"
+      >
+        <div class="h-48 w-full overflow-hidden relative">
+          <img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80"
+            alt="Comer en el restaurante"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6"
+          >
+            <span class="text-white text-3xl">🍽️</span>
+          </div>
+        </div>
+
+        <div class="p-8 text-center flex flex-col flex-grow justify-between">
+          <div>
+            <h3 class="text-2xl font-extrabold text-slate-800">
+              Para comer aquí
+            </h3>
+            <p class="text-slate-400 mt-3 text-sm leading-relaxed">
+              Escanea el código QR de tu mesa, explora la carta digital y pide
+              sin esperar a que te atiendan.
+            </p>
+          </div>
+
+          <!-- CAMBIO AQUÍ: Usamos routerLink para viajar al componente carta -->
+          <a
+            routerLink="/carta"
+            class="mt-6 w-full text-center bg-slate-800 text-white font-bold py-3.5 px-6 rounded-2xl hover:bg-slate-900 shadow-md transition-all duration-300 transform active:scale-95 block"
+          >
+            Ver la Carta Digital
+          </a>
+        </div>
+      </div>
+
+      <!-- Opción B: Pedido a Domicilio -->
+      <div
+        class="bg-white rounded-[2.5rem] border border-slate-100 shadow-xl shadow-slate-100/70 flex flex-col justify-between group overflow-hidden"
+      >
+        <div class="h-48 w-full overflow-hidden relative">
+          <img
+            src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80"
+            alt="Pedido a domicilio"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6"
+          >
+            <span class="text-white text-3xl">🛵</span>
+          </div>
+        </div>
+
+        <div class="p-8 text-center flex flex-col flex-grow justify-between">
+          <div>
+            <h3 class="text-2xl font-extrabold text-slate-800">
+              A domicilio / Para llevar
+            </h3>
+            <p class="text-slate-400 mt-3 text-sm leading-relaxed">
+              Te llevamos tus platos favoritos calentitos directamente a la
+              puerta de tu casa en tiempo récord.
+            </p>
+          </div>
+
+          <!-- CAMBIO AQUÍ: También viaja a la carta (puedes diferenciarlo luego si quieres) -->
+          <a
+            routerLink="carta"
+            class="mt-6 w-full text-center bg-orange-500 text-white font-bold py-3.5 px-6 rounded-2xl hover:bg-orange-600 shadow-md shadow-orange-500/20 transition-all duration-300 transform active:scale-95 block"
+          >
+            Pedir a Domicilio
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

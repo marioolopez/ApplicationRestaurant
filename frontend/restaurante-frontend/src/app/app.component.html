@@ -1,0 +1,13 @@
+<!-- 1 El contenedor que sujeta toda la pantalla (100% de alto y eje vertical) -->
+<div class="min-h-screen flex flex-col bg-slate-50 text-slate-800">
+  <!-- 2 Bloque Superior: Tu barra de navegación compacta y centrada -->
+  <app-header-principal></app-header-principal>
+
+  <!-- 3 Bloque Central: AHORA SÍ se estira y ocupa todo el espacio sobrante -->
+  <main class="flex-grow">
+    <router-outlet></router-outlet>
+  </main>
+
+  <!-- 4 Bloque Inferior: El pie de página que siempre se quedará abajo -->
+  <app-footer-principal></app-footer-principal>
+</div>

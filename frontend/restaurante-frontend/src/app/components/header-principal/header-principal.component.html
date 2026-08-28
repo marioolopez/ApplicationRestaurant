@@ -1,0 +1,41 @@
+<header
+  class="bg-white shadow-sm border-b border-slate-100 py-4 px-6 flex justify-center items-center w-full"
+>
+  <!-- Contenedor interno con un ancho máximo que agrupa todo en el centro -->
+  <div
+    class="flex flex-col sm:flex-row items-center justify-between w-full max-w-5xl gap-4"
+  >
+    <!-- Logo (Centrado en móviles, a la izquierda en pantallas grandes) -->
+    <div
+      class="flex items-center gap-2 font-black text-2xl text-slate-800 tracking-tight"
+    >
+      <span class="animate-pulse">🍔</span> Restaurante
+      <span class="text-orange-500">RUTERJS</span>
+    </div>
+
+    <!-- Navegación (Centrada en móviles, a la derecha en pantallas grandes) -->
+    <nav class="flex items-center gap-6 font-semibold text-sm text-slate-600">
+      <a
+        href="#"
+        routerLink="main"
+        class="hover:text-orange-500 transition-all border-b-2 border-transparent hover:border-orange-500 py-1"
+        >La Carta</a
+      >
+
+      <a
+        href="#"
+        routerLink="cononcenos"
+        class="hover:text-orange-500 transition-all border-b-2 border-transparent hover:border-orange-500 py-1"
+        >Quienes somos</a
+      >
+
+      <a
+        href="#"
+        routerLink="inicio"
+        class="bg-orange-500 text-white px-5 py-2.5 rounded-xl hover:bg-orange-600 shadow-md hover:shadow-orange-200 transition-all"
+      >
+        Iniciar Sesión
+      </a>
+    </nav>
+  </div>
+</header>
