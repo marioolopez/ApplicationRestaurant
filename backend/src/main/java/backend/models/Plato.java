@@ -34,7 +34,5 @@ public class Plato {
     @ManyToOne 
     @JoinColumn(name = "categoria_id") // Nombre de la columna clave foránea en la BBDD
     public Categoria categoria; // Dices que vas a llamar a id_categoria de la tabla categorias para ponerlo de clave foránea en la tabla PLATOS 
-    
-
 
 }

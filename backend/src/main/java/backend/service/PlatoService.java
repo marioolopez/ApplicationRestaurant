@@ -27,7 +27,7 @@ public class PlatoService { // creas un método que te devuelva lo que tu creas
         return platoRepository.save(plato);
     }
 
-    public void eliminarPlato(Long id) {
+    public void eliminarPlatoId(Long id) {
         platoRepository.deleteById(id);
     }
 
